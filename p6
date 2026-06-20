@@ -10,7 +10,7 @@ lowess_result = lowess(y, X, frac=0.3)
 
 plt.figure(figsize=(10, 6))
 plt.scatter(X, y, color='red', label='Training Data', alpha=0.7)
-plt.plot(lowess_result[:, 0], lowess_result[:, 1], color='blue', label='LOWESS␣Fit', linewidth=2)
+plt.plot(lowess_result[:, 0], lowess_result[:, 1], color='blue', label='LOWESSFit', linewidth=2)
 plt.xlabel('X', fontsize=12)
 plt.ylabel('y', fontsize=12)
 plt.title('Locally Weighted Regression using statsmodels', fontsize=14)
